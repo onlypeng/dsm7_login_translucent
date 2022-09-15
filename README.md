@@ -9,3 +9,5 @@ cp /usr/syno/synoman/webman/login/dist/style.css.gz <<备份目录，可从群�
 # 复制新文件替换旧文件 <br>
 cp <<下载解压的目录，可从群晖File Station-选择目录-属性-位置查看>>/style.css /usr/syno/synoman/webman/login/dist/style.css <br>
 cp <<下载解压的目录，可从群晖File Station-选择目录-属性-位置查看>>/style.css.gz /usr/syno/synoman/webman/login/dist/style.css.gz
+![login2](https://user-images.githubusercontent.com/29589598/190339149-bd36ddc3-4a0b-4e2f-a87c-294d5ebd759a.png)
+![login](https://user-images.githubusercontent.com/29589598/190339177-d97db048-71d4-4b62-a228-b9140cbc9236.png)
