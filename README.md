@@ -7,7 +7,7 @@
   # 切换root权限
   sudo -i
   # 备份原配置文件
-  cp /usr/syno/synoman/webman/login/dist/style.css <<备份目录，可从群晖File Station-选择目录-属性-位置查看>>/style.css.bf
+  cp /usr/syno/synoman/webman/login/dist/style.css <<备份目录，可从群晖File Station-选择目录-属性-位置查看>>/style.css.bf <br>
   cp /usr/syno/synoman/webman/login/dist/style.css.gz <<备份目录，可从群晖File Station-选择目录-属性-位置查看>>/style.css.gz.bf
   
   # 复制新文件替换旧文件
