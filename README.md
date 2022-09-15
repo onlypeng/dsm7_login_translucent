@@ -1,5 +1,5 @@
-# dsm7_login_translucent
 群晖7.x设置自动切换壁纸后白色输入框显示和突兀，所以改为半透明化很有必要 <br>
+<br>
 ssh登录群晖  <br>
 # 切换root权限 <br>
 sudo -i <br>
