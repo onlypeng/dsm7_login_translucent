@@ -44,6 +44,7 @@ do
             cp ${script_dir}/backups/3.SecureSignInLogin.css /usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/3.SecureSignInLogin.css
             cp ${script_dir}/backups/68b2c5f5747c3085bba5dd628b90ae0f.gif /usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/assets/68b2c5f5747c3085bba5dd628b90ae0f.gif
             cp ${script_dir}/backups/addc28996dad298560fd62666efd5c0b.gif /usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/assets/addc28996dad298560fd62666efd5c0b.gif
+            rm -rf ${script_dir}/backups
             echo "还原完成，退出脚本"
             exit 1               
             ;;
