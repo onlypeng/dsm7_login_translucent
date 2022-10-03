@@ -56,7 +56,7 @@ do
             exit 1
             ;;
         2)
-            local isexis=''
+            isexis=''
             echo "检查备份文件是否完整"
             for name in ${!paths[*]}
             do
@@ -65,8 +65,9 @@ do
                     isexis='true'
                 fi
             done
-            if [[ -z ${isexis} ]];then
+            if [[ -n ${isexis} ]];then
                 echo "备份文件不全，请检查备份文件或版本是否匹配"
+                exit 1
             fi
             echo "开始还原文件"
             for name in ${!paths[*]}
