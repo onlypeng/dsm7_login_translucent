@@ -74,6 +74,7 @@ do
             do
                 cp ${script_dir}/backups/${name} ${paths[${name}]}
             done
+            # 删除备份
             rm -rf ${script_dir}/backups  
             echo "还原完成，退出脚本"
             exit 1
