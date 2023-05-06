@@ -2434,7 +2434,7 @@
 .tab-panel {
     width:370px;
     /* 黑色透明效果 更改0.4可调透明度*/
-    background-color: rgba(30, 30, 30, 0.4);
+    background-color: rgba(30, 30, 30, 0.45);
     /* 登录框褐色阴影 */
     box-shadow: 0 10px 20px 0 rgba(30, 30, 30, .4);
 }
@@ -2446,34 +2446,34 @@
 
 /* 输入框字体颜色 */
 .login-textfield .input-container input {
-    color: #ffffff;
+    color: #dedede;
     background-color: transparent
 }
 
 /* 输入框下颜色条 */
 .login-textfield .bottom-border {
-    background: rgb(255 255 255 / 50%)
+    background: rgb(255,255 ,255, .5)
 }
 
 /* 选中输入框下颜色条 */
 .login-textfield:hover .bottom-border {
-    background: #fff;
+    background: #dedede;
 }
 
 /* 标题颜色 */
 .login-title span {
-    color: rgb(0 166 255);
+    color: #00a6ff;
 }
 
 /* 小标题颜色 */
 .tab-label.active {
     border-top: 3px solid #c0d0de;
-    color:rgb(255 156 70);
+    color:#ff9c46;
 }
 
 /* 登录俩字颜色 */
 .tab-panel-title {
-    color: rgb(255 255 255);
+    color: #dedede;
 }
 
 /* 用户名字体 */
@@ -2481,15 +2481,26 @@
     color: #f1f1f1;
 }
 
+/* 保持登录 */
+.login-checkbox .label {
+    color: rgb(222 222 222 / 80%)
+}
+
 /* 选择登录方法 */
 .tab-panel-title {
-    color: #ffffff;
+    color: #dedede;
 }
-    
+
 /* 登录方法字体 */
 #plugin-list>.plugin-cell>.plugin-wrapper>.plugin-desc{
     color: #b8bab9;
 }
+
+/* 忘了密码 */
+.tab-footer-link-ct .tab-footer-link {
+    color: rgb(180 180 180 / 70%);
+}
+   
     
 /* 屏蔽输入框自动填充填充账号密码时输入框变为白底 */
 .login-tabs .login-tabs-content-wrapper .login-tabs-co
@@ -2499,7 +2510,7 @@
 }
 .login-textfield .input-container input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
     /* 此项需要与输入框字体颜色一致 */
-    -webkit-text-fill-color: #ffffff !important;
+    -webkit-text-fill-color: #dedede !important;
     -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
     background-color:transparent;
     background-image: none;
