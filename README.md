@@ -34,7 +34,7 @@ transparent.sh 为黑色透明效果<br>
 
 备注：本人ps菜的扣脚，gif动图存在瑕疵，会ps的大神可自己在在gif目录下载动图修改后替换patch文件中动图
 # 显示效果： <br>
-![login2](https://user-images.githubusercontent.com/29589598/190339149-bd36ddc3-4a0b-4e2f-a87c-294d5ebd759a.png)
-![login](https://user-images.githubusercontent.com/29589598/190339177-d97db048-71d4-4b62-a228-b9140cbc9236.png)
+![202305071424291 (1)](https://user-images.githubusercontent.com/29589598/236661896-76aca08d-14af-4ebe-a483-35c26a437120.png)
+![202305071424291 (2)](https://user-images.githubusercontent.com/29589598/236661803-e4d84860-aec6-4424-aadc-c98167e14f66.png)
 ![20230507110327](https://user-images.githubusercontent.com/29589598/236655506-a8e60ab3-bc24-45be-a804-814b4b850aac.png)
 ![202305071103271](https://user-images.githubusercontent.com/29589598/236655511-4a946a1e-096b-4746-adfb-02975fb867db.png)
