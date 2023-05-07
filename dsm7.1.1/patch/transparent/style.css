@@ -2042,12 +2042,6 @@
     color: #00a6ff;
 }
 
-/* 小标题颜色 */
-.tab-label.active {
-    border-top: 3px solid #c0d0de;
-    color:#ff9c46;
-}
-
 /* 登录俩字颜色 */
 .tab-panel-title {
     color: #dedede;
