@@ -1,8 +1,7 @@
-修改群晖7.x登陆页面登陆框主题<br>
-<br>
-
+# 修改群晖7.x登陆页面登陆框主题<br>
 # 此补丁适用于DS918+，其他版本没测试过，请自行查看测试<br>
 # 根据自己群辉版本安装对应补丁<br>
+# css文件没有删除注释和压缩，有需求自行修改
 frosting.sh 为磨砂玻璃效果<br>
 transparent.sh 为黑色透明效果<br>
 参数 1为替换，2为还原<br>
@@ -37,3 +36,5 @@ transparent.sh 为黑色透明效果<br>
 # 显示效果： <br>
 ![login2](https://user-images.githubusercontent.com/29589598/190339149-bd36ddc3-4a0b-4e2f-a87c-294d5ebd759a.png)
 ![login](https://user-images.githubusercontent.com/29589598/190339177-d97db048-71d4-4b62-a228-b9140cbc9236.png)
+![20230507110327](https://user-images.githubusercontent.com/29589598/236655506-a8e60ab3-bc24-45be-a804-814b4b850aac.png)
+![202305071103271](https://user-images.githubusercontent.com/29589598/236655511-4a946a1e-096b-4746-adfb-02975fb867db.png)
