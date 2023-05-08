@@ -6,7 +6,7 @@ frosting.sh 为磨砂玻璃效果<br>
 transparent.sh 为黑色透明效果<br>
 参数 1为替换，2为还原<br>
 例如磨砂效果安装：<br>
-    上传脚本的路径 可在File Station 右键点击install脚本-属性-位置 获取
+    上传脚本的路径 可在File Station 右键点击frosting.sh脚本-属性-位置 获取
     方法1： <br>
         0、上传脚本到群晖 <br>
         1、开启ssh并进入群晖后台 <br>
