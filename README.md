@@ -12,7 +12,7 @@ transparent.sh 为黑色透明效果<br>
         1、开启ssh并进入群晖后台 <br>
         2、sudo -i  切换root用户 <br>
         3、cd 《上传脚本的路径》 <br>
-        4、chmod 755 install.sh 赋予脚本运行权限 <br>
+        4、chmod 755 frosting.sh 赋予脚本运行权限 <br>
         5、./frosting.sh 1 运行脚本替换 <br>
         6、./frosting.sh 2 运行脚本还原 <br>
     方法2： <br>
