@@ -2450,3 +2450,11 @@
 .login-textfield .input-container input {
     background-color:transparent;
 }
+
+/* 调整页面亮度，更改数字1，1是原亮度，高调亮，低调暗 默认原亮度*/
+body {
+    -webkit-filter:brightness(1);
+    -o-filter:brightness(1);
+    -moz-filter:brightness(1);
+    filter:brightness(1)
+}
