@@ -1,15 +1,11 @@
 #!/bin/bash
 
-par=$1
-# 校验指令参数
-if  [[ -n $par && "$par" != "1" && "$par" != "2" && "$par" != "3" ]]; then
-    echo "参数错误"
-    exit 1
-fi
 # 调节亮度，向上调亮，向下暗,步进0.01，
 brightness=1
 # 是否启用调试
 isdebug=false
+# 命令最大错误次数
+err_max=6
 
 # 获取待替换图片和动图存放位置
 patch_path="$(cd $(dirname $0);pwd)/patch"
@@ -18,13 +14,16 @@ version=$(awk -F= -v key="productversion" '$1 == key {gsub(/"/, "", $2); print $
 # 登录页文件页面位置
 style=('/usr/syno/synoman/webman/login/css/login.css' \
 '/usr/syno/synoman/webman/login/dist/style.css')
-#登录页面选择鞥路方式页面位置
+
+#登录页面选择登录方式页面位置
 style2=('/usr/syno/synoman/webman/login/dist/586.style.css')
 
 # 批准登录方法页面文件位置
 ssl=('/usr/syno/synoman/webman/3rdparty/SecureSignIn/SecureSignInLogin.css' \
 '/usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/3.SecureSignInLogin.css' \
-'/usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/243.SecureSignInLogin.css')
+'/usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/243.SecureSignInLogin.css' \
+'/usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/428.SecureSignInLogin.css' \
+'/usr/syno/synoman/webman/3rdparty/SecureSignIn/login-dist/826.SecureSignInLogin.css')
 
 # 图标文件位置
 png1=('/usr/syno/synoman/webman/login/assets/1bc43875501e55e5e741e427ca50dbdf.png' \
@@ -220,10 +219,13 @@ install() {
     echo "补丁安装完成"
 }
 
+par=$1
+
 # 校验补丁文件是否存在
 check_local_file
 # 进入选项
 while true
+err_count=0
 do
     if [[ -n $par ]]; then
         input="$par"
@@ -232,14 +234,17 @@ do
     fi
     case $input in
         1)  
+        	err_count=0
             frosting
             install
             ;;
         2)  
+            err_count=0
             transparent
             install
             ;;
         3)
+        	err_count=0
             uninstall
             ;;
         [qQ])
@@ -247,10 +252,15 @@ do
             exit 0
             ;;  
         *)
-            echo "输入指令错误，重新输入..."
+        	err_count=err_count + 1
+            echo "输入指令错误"
             ;;
     esac
     if [[ -n $par ]]; then
+        exit 0
+    fi
+    if [[ $err_count > $err_max ]]; then
+    	echo "指令错误次数达到设置最大值"
         exit 0
     fi
 done
